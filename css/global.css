@@ -1,0 +1,267 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ! Animações ! */
+.link-anim {
+    text-decoration: none;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.link-anim:hover {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    transform: scale(1.01);
+}
+
+.card-anim {
+    text-decoration: none;
+    transition: transform 0.6s ease;
+}
+
+.card-anim:hover {
+    transform: scale(1.035);
+}
+
+/* ! btn */
+.fundo2-btn {
+    background-color: #6b4153;
+    color: #fff;
+    border: none;
+
+    transform: scale(1);
+    transition: box-shadow 0.8s ease, transform 1s ease;
+}
+
+.fundo2-btn:hover {
+    background-color: #6b4153;
+    color: #fff;
+    box-shadow: rgba(40, 40, 43, 0.2) 0px 7px 29px 0px;
+
+    transform: scale(1.05);
+    transition: box-shadow 0.8s ease, transform 1s ease;
+}
+
+.fundo2-btn:focus {
+    background-color: #653c4e;
+    color: #fff;
+    box-shadow: none;
+}
+
+.fundo2-btn:active {
+    background-color: #5a3947 !important;
+    color: #fff !important;
+    box-shadow: none !important;
+}
+
+.fundo2-btn-maior {
+    background-color: #6b4153;
+    color: #fff;
+    border: none;
+
+    transform: scale(1);
+    transition: box-shadow 0.8s ease, transform .6s ease;
+}
+
+.fundo2-btn-maior:hover {
+    background-color: #6b4153;
+    color: #fff;
+    box-shadow: rgba(40, 40, 43, 0.2) 0px 7px 29px 0px;
+
+    transform: scale(1.01);
+    transition: box-shadow 0.8s ease, transform .6s ease;
+}
+
+
+.fundo2-btn-maior:focus {
+    background-color: #653c4e;
+    color: #fff;
+    box-shadow: none;
+}
+
+.fundo2-btn-maior:active {
+    background-color: #5a3947 !important;
+    color: #fff !important;
+    box-shadow: none !important;
+}
+
+.fundo-btn {
+    background: white;
+    color: black;
+}
+
+
+
+/* ! Link */
+.link-sem a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.link-sem-black a {
+    text-decoration: none;
+}
+
+/* ! tela inteira */
+.page-wrapper {
+    min-height: 90vh;
+    /* faz com que o conteúdo ocupe a altura total da tela */
+    display: flex;
+    flex-direction: column;
+}
+
+.page-wrapper>.flex-grow-1 {
+    flex: 1;
+    /* o conteúdo se expande até empurrar o footer */
+}
+
+/* ! Footer */
+.text-footer {
+    margin: 0 auto;
+}
+
+.fundo-nav {
+    background-color: #DCC1CD;
+}
+
+.fundo {
+    background-color: #dcc1cdb1;
+}
+
+.fundo2 {
+    background: #6b4153;
+}
+
+.texto-cor {
+    color: #6b4153;
+}
+
+.fundo2:focus {
+    background: #653c4e;
+    border-color: #6b4153 !important;
+    /* cor da borda no foco */
+    box-shadow: 0 0 0 0.25rem #875168;
+    /* sombra no foco, como o Bootstrap faz */
+}
+
+
+/* ! Nav */
+
+.icons-some {
+    display: flex;
+}
+
+.itens-aparece {
+    display: none;
+}
+
+@media screen and (max-width: 1200px) {
+    .tamanhoCard {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .icons-some {
+        display: none;
+    }
+
+    .itens-aparece {
+        display: block;
+    }
+}
+
+/* ! card */
+.img-cartao {
+    width: 250px;
+    height: 300px;
+}
+
+.tamanhoCardResp {
+    width: 100%;
+}
+
+.imgCardResp {
+    width: 400px;
+}
+
+@media screen and (max-width: 767px) {
+    .tamanhoCardResp {
+        width: 80%;
+    }
+
+    .imgCardResp {
+        width: 300px;
+    }
+}
+
+/* ! Sem categoria */
+.img-carrosel {
+    height: 250px;
+}
+
+.bloco-shop {
+    background: #ECEBE9;
+}
+
+.img-perfil {
+    width: 30px;
+    height: 30px;
+}
+
+
+/* ! Login */
+.b-login {
+    background-color: #f8f9fa;
+}
+
+.text-login {
+    color: #000000;
+}
+
+.login {
+    /* imagem de fundo */
+    background-size: cover;
+    background-position: center;
+    /* position: relative; */
+}
+
+.btn-login {
+    background: #C3BDBA;
+}
+
+.btn-login:hover {
+    background-color: rgb(219, 208, 204, 90%);
+    /* mesma cor padrão */
+    color: white;
+    /* mantém a cor do texto */
+    border-color: rgb(219, 208, 204, 90%);
+    /* mantém a borda */
+}
+
+/* .fundoLogin {
+    padding: 5em 3em;
+} */
+
+.bloco-login {
+    background: white;
+    width: 90%;
+    max-width: 600px;
+}
+
+
+
+/* !! MODIFICA BORDA !! */
+.border-custom {
+    border-color: #ddd !important;
+
+    /* muda a cor da borda (verde, por exemplo) */
+}
+
+.border-custom:focus {
+    border-color: #DCC1CD !important;
+    /* cor da borda no foco */
+    box-shadow: 0 0 0 0.25rem rgb(219, 208, 204, 90%);
+    /* sombra no foco, como o Bootstrap faz */
+}

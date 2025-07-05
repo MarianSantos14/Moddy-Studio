@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta name="description" content="Loja de móveis">
+    <meta name="keywords" content="Sofá, Cama, Cadeira">
+    <meta name="author" content="Mariana e Emanueli">
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Minha conta | Moody Studio</title>
+
+    <link rel="stylesheet" href="css/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/responsivo-imgs.css">
+    <link rel="icon" href="img/logo.svg" type="image/x-icon">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .profile-header {
+            background-color: #ffffff;
+            padding: 2rem;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+        }
+
+        .profile-section {
+            background-color: #ffffff;
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+        }
+
+        .product-img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body class="page-wrapper d-flex flex-column min-vh-100 b-login">
+    <!-- * Navbar e Breadcrumb * -->
+    <header>
+        <!-- ! Navbar -->
+        <section>
+            <nav class="navbar navbar-expand-lg d-flex align-items-center justify-content-between  fundo-nav">
+                <div class="container d-flex align-items-center justify-content-between">
+                    <h1 class=" mb-0 fw-bold me-5 texto-cor h5">MOODY STUDIO</h1>
+
+                    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="navbar-collapse collapse align-items-center justify-content-between"
+                        id="navbarSupportedContent">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link fw-medium texto-cor"
+                                    href="index.html">INÍCIO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fw-medium texto-cor" href="index.html#store">LOJA</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fw-medium texto-cor" href="contactUs.html">FALE CONOSCO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fw-medium texto-cor" href="temosLegais.html">TERMOS DE
+                                    PRIVACIDADE</a>
+                            </li>
+                        </ul>
+
+                        <ul class="navbar-nav itens-aparece">
+                            <li class="nav-item">
+                                <div class="dropdown">
+                                    <button class="btn dropdown-toggle nav-link fw-medium texto-cor  disabled" type="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false" aria-disabled="true" >
+                                        CONTA / LOGIN
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="login.html">Logar com minha conta</a></li>
+                                        <li><a class="dropdown-item" href="loginCreate.html">Criar conta</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fw-medium texto-cor" href="favoritos.html">FAVORITOS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fw-medium texto-cor" href="shoppingBag.html">CARRINHO</a>
+                            </li>
+                        </ul>
+
+                        <ul class="navbar-nav icons-some">
+                            <li class="nav-item col">
+                                <div class="dropdown disabled">
+                                    <button class="btn nav-link fw-medium text-black" aria-disabled="true">
+                                        <i class="bi bi-person" style="font-size: 18px;"></i>
+                                    </button>
+                                </div>
+                            </li>
+                            <li class="nav-item col">
+                                <a class="nav-link text-black" href="favoritos.html"><i class="bi bi-heart"></i></a>
+                            </li>
+                            <li class="nav-item col">
+                                <a href="shoppingBag.html" class="nav-link text-black position-relative">
+                                    <i class="bi bi-bag"></i>
+                                    <span
+                                        class="position-absolute top-5 start-100 translate-middle badge rounded-pill  fundo-btn">
+                                        2
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </section>
+
+        <!-- ! Breadcrumb -->
+        <section class="container mt-5">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html" class="texto-cor">Home</a></li>
+                    <li class="breadcrumb-item"><a href="login.html" class="texto-cor">Login</a></li>
+                    <li class="breadcrumb-item" aria-current="page">Conta</li>
+                </ol>
+            </nav>
+        </section>
+    </header>
+
+    <!-- ! Conta -->
+    <main class="content flex-grow-1 d-flex flex-column justify-content-center">
+        <div class="container py-4" style="max-width: 1100px;">
+            <div class="profile-header shadow-sm">
+                <h2 class="mb-3">Olá, Ana Beatriz!</h2>
+                <p class="mb-1"><strong>Email:</strong> ana.beatriz@email.com</p>
+                <p class="mb-1"><strong>Telefone:</strong> (11) 98765-4321</p>
+                <p class="mb-1"><strong>Endereço:</strong> Rua das Palmeiras, 123 - Jardim Primavera, São Paulo -
+                    SP, 04567-890</p>
+            </div>
+
+            <div class="profile-section shadow-sm">
+                <h4 class="mb-3">Pedidos Recentes</h4>
+
+                <div class="card mb-3">
+                    <div class="card-body d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <img src="img/produtos/sofaBranco.png" class="product-img rounded me-3" alt="Poltrona">
+                            <div>
+                                <h6 class="mb-1">Sofá de Couro</h6>
+                                <p class="mb-0 text-muted">Comprado em 28/04/2025</p>
+                            </div>
+                        </div>
+                        <div>
+                            <strong>R$ 499,00</strong><br>
+                            <a href="detalhesPedido.html" class="btn btn-sm fundo2-btn mt-1">Ver detalhes</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- ! Footer -->
+    <footer class="fundo-nav  d-flex align-items-end justify-content-center py-3">
+        <div>
+            <p class="text-footer fw-medium">1º IPI Mariana Santos & Emanueli</p>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

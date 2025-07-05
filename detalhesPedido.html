@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta name="description" content="Loja de móveis">
+    <meta name="keywords" content="Sofá, Cama, Cadeira">
+    <meta name="author" content="Mariana e Emanueli">
+    
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Detalhes do pedidos | Moody Studio</title>
+
+    <link rel="stylesheet" href="css/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/responsivo-imgs.css">
+    <link rel="icon" href="img/logo.svg" type="image/x-icon">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .product-img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .card-info {
+            background-color: #ffffff;
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .info-title {
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .text-muted-small {
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+
+<body class="page-wrapper d-flex flex-column min-vh-100 b-login">
+    <!-- * Navbar e Breadcrumb * -->
+    <header>
+        <!-- ! Navbar -->
+        <section>
+            <nav class="navbar navbar-expand-lg d-flex align-items-center justify-content-between  fundo-nav">
+                <div class="container d-flex align-items-center justify-content-between">
+                    <h1 class=" mb-0 fw-bold me-5 texto-cor h5">MOODY STUDIO</h1>
+
+                    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="navbar-collapse collapse align-items-center justify-content-between"
+                        id="navbarSupportedContent">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link fw-medium texto-cor"
+                                    href="index.html">INÍCIO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fw-medium texto-cor" href="index.html#store">LOJA</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fw-medium texto-cor" href="contactUs.html">FALE CONOSCO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fw-medium texto-cor" href="temosLegais.html">TERMOS DE
+                                    PRIVACIDADE</a>
+                            </li>
+                        </ul>
+
+                        <ul class="navbar-nav itens-aparece">
+                            <li class="nav-item">
+                                <div class="dropdown">
+                                    <button class="btn dropdown-toggle nav-link fw-medium texto-cor  disabled" type="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false" aria-disabled="true" >
+                                        CONTA / LOGIN
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="login.html">Logar com minha conta</a></li>
+                                        <li><a class="dropdown-item" href="loginCreate.html">Criar conta</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fw-medium texto-cor" href="favoritos.html">FAVORITOS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fw-medium texto-cor" href="shoppingBag.html">CARRINHO</a>
+                            </li>
+                        </ul>
+
+                        <ul class="navbar-nav icons-some">
+                            <li class="nav-item col">
+                                <div class="dropdown disabled">
+                                    <button class="btn nav-link fw-medium text-black" aria-disabled="true">
+                                        <i class="bi bi-person" style="font-size: 18px;"></i>
+                                    </button>
+                                </div>
+                            </li>
+                            <li class="nav-item col">
+                                <a class="nav-link text-black" href="favoritos.html"><i class="bi bi-heart"></i></a>
+                            </li>
+                            <li class="nav-item col">
+                                <a href="shoppingBag.html" class="nav-link text-black position-relative">
+                                    <i class="bi bi-bag"></i>
+                                    <span
+                                        class="position-absolute top-5 start-100 translate-middle badge rounded-pill  fundo-btn">
+                                        2
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </section>
+
+        <!-- ! Breadcrumb -->
+        <section class="container mt-5">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html" class="texto-cor">Home</a></li>
+                    <li class="breadcrumb-item"><a href="login.html" class="texto-cor">Login</a></li>
+                    <li class="breadcrumb-item"><a href="contaUsuario.html" class="texto-cor">Conta</a></li>
+                    <li class="breadcrumb-item" aria-current="page">Detalhes o pedido</li>
+                </ol>
+            </nav>
+        </section>
+    </header>
+
+    <!-- ! Detalhes do pedido -->
+    <main class="content flex-grow-1 d-flex flex-column justify-content-center container" style="max-width: 900px;">
+        <h2 class="pt-5 pb-3">Detalhes do Pedido</h2>
+
+        <div class="card-info">
+            <p class="mb-1"><span class="info-title">Número do Pedido:</span> #54321</p>
+            <p class="mb-1"><span class="info-title">Data da Compra:</span> 28/04/2025</p>
+            <p class="mb-1"><span class="info-title">Data da Entrega:</span> 07/05/2025</p>
+            <p class="mb-0"><span class="info-title">Status:</span> Entregue</p>
+        </div>
+
+        <div class="card-info d-flex">
+            <img src="img/produtos/sofaBranco.png" class="product-img me-4" alt="Sofá">
+            <div>
+                <h5>Sofá de Couro</h5>
+                <p class="mb-1"><strong>Cor:</strong> Branco</p>
+                <p class="mb-1"><strong>Quantidade:</strong> 1</p>
+                <p class="mb-0"><strong>Preço:</strong> R$ 499,00</p>
+            </div>
+        </div>
+
+        <div class="card-info">
+            <h5>Endereço de Entrega</h5>
+            <p class="mb-1">Ana Beatriz</p>
+            <p class="mb-1">Rua das Palmeiras, 123</p>
+            <p class="mb-1">Jardim Primavera, São Paulo - SP</p>
+            <p class="mb-0">CEP: 04567-890</p>
+        </div>
+
+        <div class="card-info">
+            <h5>Método de Pagamento</h5>
+            <p class="mb-1"><strong>Cartão de Crédito:</strong> **** **** **** 4821</p>
+            <p class="mb-0 text-muted-small">Parcelado em 4x de R$ 124,75</p>
+        </div>
+
+        <div class="card-info">
+            <h5>Resumo do Pedido</h5>
+            <div class="d-flex justify-content-between">
+                <span>Subtotal</span>
+                <span>R$ 499,00</span>
+            </div>
+            <div class="d-flex justify-content-between">
+                <span>Frete</span>
+                <span>Grátis</span>
+            </div>
+            <hr>
+            <div class="d-flex justify-content-between fw-bold">
+                <span>Total</span>
+                <span>R$ 499,00</span>
+            </div>
+        </div>
+    </main>
+
+    <!-- ! Footer -->
+    <footer class="fundo-nav  d-flex align-items-end justify-content-center py-3">
+        <div>
+            <p class="text-footer fw-medium">1º IPI Mariana Santos & Emanueli</p>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

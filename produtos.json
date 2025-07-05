@@ -1,0 +1,145 @@
+{
+    "sofaBranco": {
+        "nome": "Sofá de Couro",
+        "imagem": "img/produtos/sofaBranco.png",
+        "imagemII": "img/tecidos/sofaBranco.png",
+        "imagemMobile": "img/produtos/responsivo/sofaBranco.png",
+        "imagemIIMobile": "img/tecidos/responsivo/sofaBranco.png",
+        "tamanho": "1,80m x 2,40m",
+        "preco": "499,00",
+        "cor": "branco",
+        "disponivel": "indisponivel nas lojas"
+    },
+    "camaAzul": {
+        "nome": "Cama king",
+        "imagem": "img/produtos/camaAzul.png",
+        "imagemII": "img/tecidos/camaAzul.png",
+        "imagemMobile": "img/produtos/responsivo/camaAzul.png",
+        "imagemIIMobile": "img/tecidos/responsivo/camaAzul.png",
+        "tamanho": "1,93m x 2,00m",
+        "preco": "599,00",
+        "cor": "azul",
+        "disponivel": "disponivel nas lojas"
+    },
+    "cadeiraBranca": {
+        "nome": "Cadeira de couro",
+        "imagem": "img/produtos/cadeiraBranca.png",
+        "imagemII": "img/tecidos/cadeiraBranca.png",
+        "imagemMobile": "img/produtos/responsivo/cadeiraBranca.png",
+        "imagemIIMobile": "img/tecidos/responsivo/cadeiraBranca.png",
+        "tamanho": "43cm x 55cm",
+        "preco": "99,00",
+        "cor": "branco",
+        "disponivel": "disponivel nas lojas"
+    },
+    "sofaCinza": {
+        "nome": "Sofá tradicional",
+        "imagem": "img/produtos/sofaCinza.png",
+        "imagemII": "img/tecidos/sofaCinza.png",
+        "imagemMobile": "img/produtos/responsivo/sofaCinza.png",
+        "imagemIIMobile": "img/tecidos/responsivo/sofaCinza.png",
+        "tamanho": "1,80m x 2,40m",
+        "preco": "399,00",
+        "cor": "Cinza",
+        "disponivel": "indisponivel nas lojas"
+    },
+    "camaRosa": {
+        "nome": "Cama king",
+        "imagem": "img/produtos/camaRosa.png",
+        "imagemII": "img/tecidos/camaRosa.png",
+        "imagemMobile": "img/produtos/responsivo/camaRosa.png",
+        "imagemIIMobile": "img/tecidos/responsivo/camaRosa.png",
+        "tamanho": "1,93m x 2,00m",
+        "preco": "699,00",
+        "cor": "Rosa",
+        "disponivel": "indisponivel nas lojas"
+    },
+    "cadeiraRosa": {
+        "nome": "Cadeira de tecido",
+        "imagem": "img/produtos/cadeiraRosa.png",
+        "imagemII": "img/tecidos/cadeiraRosa.png",
+        "imagemMobile": "img/produtos/responsivo/cadeiraRosa.png",
+        "imagemIIMobile": "img/tecidos/responsivo/cadeiraRosa.png",
+        "tamanho": "43cm x 55cm",
+        "preco": "99,00",
+        "cor": "Rosa",
+        "disponivel": "disponivel nas lojas"
+    },
+    "almofada1": {
+        "nome": "Almofada",
+        "imagem": "img/produtos/almofadabranca.png",
+        "imagemII": "img/tecidos/almofadabranca.png",
+        "imagemMobile": "img/produtos/responsivo/almofadabranca.png",
+        "imagemIIMobile": "img/tecidos/responsivo/almofadabranca.png",
+        "tamanho": "50cm x 70cm",
+        "preco": "49,99",
+        "cor": "Branco",
+        "disponivel": "disponivel nas lojas"
+    },
+    "cobertoVerde": {
+        "nome": "Conjunto coberta e travesseiro",
+        "imagem": "img/produtos/cobertoVerde.png",
+        "imagemII": "img/tecidos/cobertoVerde.png",
+        "imagemMobile": "img/produtos/responsivo/cobertoVerde.png",
+        "imagemIIMobile": "img/tecidos/responsivo/cobertoVerde.png",
+        "tamanho": "100cm x 120cm",
+        "preco": "79,99",
+        "cor": "verde",
+        "disponivel": "indisponivel nas lojas"
+    },
+    "cobertoRosa": {
+        "nome": "Kit coberta",
+        "imagem": "img/produtos/cobertoRosa.png",
+        "imagemII": "img/tecidos/cobertoRosa.png",
+        "imagemMobile": "img/produtos/responsivo/cobertoRosa.png",
+        "imagemIIMobile": "img/tecidos/responsivo/cobertoRosa.png",
+        "tamanho": "220cm x 240cm",
+        "preco": "99,99",
+        "cor": "rosa",
+        "disponivel": "disponivel nas lojas"
+    },
+    "cobertoMarrom": {
+        "nome": "Kit coberta",
+        "imagem": "img/produtos/cobertoMarrom.png",
+        "imagemII": "img/tecidos/cobertoMarrom.png",
+        "imagemMobile": "img/produtos/responsivo/cobertoMarrom.png",
+        "imagemIIMobile": "img/tecidos/responsivo/cobertoMarrom.png",
+        "tamanho": "220cm x 240cm",
+        "preco": "99,99",
+        "cor": "bege",
+        "disponivel": "disponivel nas lojas"
+    },
+    "sofaMarrom": {
+        "nome": "Sofá tradicional",
+        "imagem": "img/produtos/sofaMarrom.png",
+        "imagemII": "img/tecidos/sofaMarrom.png",
+        "imagemMobile": "img/produtos/responsivo/sofaMarrom.png",
+        "imagemIIMobile": "img/tecidos/responsivo/sofaMarrom.png",
+        "tamanho": "1,80m x 2,40m",
+        "preco": "399,99",
+        "cor": "bege",
+        "disponivel": "disponivel nas lojas"
+    },
+    "tapeteCinza": {
+        "nome": "Tapete felpudo",
+        "imagem": "img/produtos/tapeteCinza.png",
+        "imagemII": "img/tecidos/tapeteCinza.png",
+        "imagemMobile": "img/produtos/responsivo/tapeteCinza.png",
+        "imagemIIMobile": "img/tecidos/responsivo/tapeteCinza.png",
+        "tamanho": "1,00m x 1,50m",
+        "preco": "59,99",
+        "cor": "cinza",
+        "disponivel": "indisponivel nas lojas"
+    },
+    "camaVerde": {
+        "nome": "Cama king",
+        "imagem": "img/produtos/camaVerde.png",
+        "imagemII": "img/tecidos/camaVerde.png",
+        "imagemMobile": "img/produtos/responsivo/camaVerde.png",
+        "imagemIIMobile": "img/tecidos/responsivo/camaVerde.png",
+        "tamanho": "1,93m x 2,00m",
+        "preco": "699,00",
+        "cor": "verde",
+        "disponivel": "disponivel nas lojas"
+    }
+}

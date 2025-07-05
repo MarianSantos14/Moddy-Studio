@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta name="description" content="Loja de móveis">
+    <meta name="keywords" content="Sofá, Cama, Cadeira">
+    <meta name="author" content="Mariana e Emanueli">
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Entre em contato conosco | Moody Studio</title>
+
+    <link rel="stylesheet" href="css/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/responsivo-imgs.css">
+    <link rel="icon" href="img/logo.svg" type="image/x-icon">
+
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .tamanho-input {
+            height: 5em;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body class="page-wrapper d-flex flex-column min-vh-100 b-login">
+    <!-- ! Navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg d-flex align-items-center justify-content-between  fundo-nav">
+            <div class="container d-flex align-items-center justify-content-between">
+                <h1 class=" mb-0 fw-bold me-5 texto-cor h5">MOODY STUDIO</h1>
+
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="navbar-collapse collapse align-items-center justify-content-between"
+                    id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link fw-medium texto-cor" href="index.html">INÍCIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-medium texto-cor" href="index.html#store">LOJA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-medium texto-cor disabled" aria-disabled="true" href="contactUs.html">FALE CONOSCO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-medium texto-cor" href="temosLegais.html">TERMOS DE PRIVACIDADE</a>
+                        </li>
+                    </ul>
+
+                    <ul class="navbar-nav itens-aparece">
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <button class="btn dropdown-toggle nav-link fw-medium texto-cor" type="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    CONTA / LOGIN
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="login.html">Logar com minha conta</a></li>
+                                    <li><a class="dropdown-item" href="loginCreate.html">Criar conta</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-medium texto-cor" href="favoritos.html">FAVORITOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-medium texto-cor" href="shoppingBag.html">CARRINHO</a>
+                        </li>
+                    </ul>
+
+                    <ul class="navbar-nav icons-some">
+                        <li class="nav-item col">
+                            <div class="dropdown">
+                                <button class="btn nav-link fw-medium text-black" type="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="bi bi-person" style="font-size: 18px;"></i>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="login.html">Logar com minha conta</a></li>
+                                    <li><a class="dropdown-item" href="loginCreate.html">Criar conta</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item col">
+                            <a class="nav-link text-black" href="favoritos.html"><i class="bi bi-heart"></i></a>
+                        </li>
+                        <li class="nav-item col">
+                            <a href="shoppingBag.html" class="nav-link text-black position-relative">
+                                <i class="bi bi-bag"></i>
+                                <span
+                                    class="position-absolute top-5 start-100 translate-middle badge rounded-pill  fundo-btn">
+                                    2
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ! Contact -->
+    <main class="content flex-grow-1 d-flex flex-column justify-content-center">
+        <section class="pb-5">
+            <h2 class="text-login fw-bold text-center pb-5 pt-5">Contact Us</h2>
+            <div>
+                <section class="login d-flex align-items-center justify-content-center">
+                    <div class="row bloco-login fundoLogin rounded-5 shadow d-flex justify-content-between"
+                        style="width: 90%;max-width: 900px;">
+                        <form class="col-md-6 p-5">
+                            <div class="mb-3">
+                                <label for="exampleInput" class="form-label">Nome</label>
+                                <input class="form-control border-custom" id="exampleInput">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">E-mail</label>
+                                <input type="email" class="form-control border-custom" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-3">
+                                <label for="mensagem" class="form-label">Mensagem</label>
+                                <input class="form-control border-custom tamanho-input" id="mensagem"
+                                    placeholder="Digite sua mensagem"></input>
+                            </div>
+                            <div class="pt-2 d-flex justify-content-center">
+                                <button type="submit" class="btn text-white fundo2-btn">Enviar</button>
+                            </div>
+                        </form>
+
+                        <div
+                            class="col-md-6 p-5 m-0 fundo rounded-5 fw-medium d-flex flex-column justify-content-center">
+                            <h2 class="pb-2">Redes</h2>
+                            <div class="d-flex align-items-center">
+                                <i class="bi bi-telephone-fill me-3 pb-3"></i>
+                                <div class="d-flex align-items-start flex-column">
+                                    <p class="m-0">Telefone</p>
+                                    <p>(11) 3123-4567</p>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <i class="bi bi-envelope-fill me-3 pb-3"></i>
+                                <div class="d-flex align-items-start flex-column">
+                                    <p class="m-0">E-Mail</p>
+                                    <p>moddystudio12@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <i class="bi bi-geo-alt-fill me-3 pb-3"></i>
+                                <div class="d-flex align-items-start flex-column">
+                                    <p class="m-0">Endereço</p>
+                                    <p>Rua das Magnólias, 987 – Vila Nova<br>Conceição, São Paulo</p>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <i class="bi bi-browser-edge me-3 pb-3"></i>
+                                <div class="d-flex align-items-start flex-column">
+                                    <p class="m-0">Website</p>
+                                    <p>www.moddystudio.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </main>
+
+    <!-- ! Footer -->
+    <footer class="fundo-nav  d-flex align-items-end justify-content-center py-3">
+        <div>
+            <p class="text-footer fw-medium">1º IPI Mariana Santos & Emanueli</p>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

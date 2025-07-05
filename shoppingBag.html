@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta name="description" content="Loja de móveis">
+    <meta name="keywords" content="Sofá, Cama, Cadeira">
+    <meta name="author" content="Mariana e Emanueli">
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Carrinho | Moody Studio</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/responsivo-imgs.css">
+    <link rel="icon" href="img/logo.svg" type="image/x-icon">
+
+    <style>
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            filter: invert(1);
+        }
+    </style>
+</head>
+
+<body class="page-wrapper d-flex flex-column min-vh-100">
+    <!-- ! Navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg d-flex align-items-center justify-content-between  fundo-nav">
+            <div class="container d-flex align-items-center justify-content-between">
+                <h1 class=" mb-0 fw-bold me-5 texto-cor h5">MOODY STUDIO</h1>
+
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="navbar-collapse collapse align-items-center justify-content-between"
+                    id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link fw-medium texto-cor" href="index.html">INÍCIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-medium texto-cor" href="index.html#store">LOJA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-medium texto-cor" href="contactUs.html">FALE CONOSCO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-medium texto-cor" href="temosLegais.html">TERMOS DE PRIVACIDADE</a>
+                        </li>
+                    </ul>
+
+                    <ul class="navbar-nav itens-aparece">
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <button class="btn dropdown-toggle nav-link fw-medium texto-cor" type="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    CONTA / LOGIN
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="login.html">Logar com minha conta</a></li>
+                                    <li><a class="dropdown-item" href="loginCreate.html">Criar conta</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-medium texto-cor" href="favoritos.html">FAVORITOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-medium texto-cor disabled" aria-disabled="true"
+                                href="shoppingBag.html">CARRINHO</a>
+                        </li>
+                    </ul>
+
+                    <ul class="navbar-nav icons-some">
+                        <li class="nav-item col">
+                            <div class="dropdown">
+                                <button class="btn nav-link fw-medium text-black" type="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="bi bi-person" style="font-size: 18px;"></i>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="login.html">Logar com minha conta</a></li>
+                                    <li><a class="dropdown-item" href="loginCreate.html">Criar conta</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item col">
+                            <a class="nav-link text-black" href="favoritos.html"><i class="bi bi-heart"></i></a>
+                        </li>
+                        <li class="nav-item col">
+                            <a href="#" class="nav-link text-black position-relative disabled" aria-disabled="true">
+                                <i class="bi bi-bag"></i>
+                                <span
+                                    class="position-absolute top-5 start-100 translate-middle badge rounded-pill  fundo-btn">
+                                    2
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ! Breadcrumb -->
+    <section class="container mt-3">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html" class="texto-cor">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Carrinho</li>
+            </ol>
+        </nav>
+    </section>
+
+    <main class="content flex-grow-1 d-flex flex-column justify-content-center mb-5 container">
+        <!-- ! Shopping -->
+        <h2 class="pt-5 pb-3 text-center">SHOPPING BAG</h2>
+        <section class="container d-flex justify-content-center pb-3">
+            <section class="">
+                <div>
+                    <a href="produto.html?id=camaAzul" class="d-flex justify-content-center link-anim">
+                        <div class="card w-100" style="max-width: 900px;">
+                            <div class="row g-0">
+                                <div class="col-3 d-flex align-items-center justify-content-center">
+                                    <img src="img/produtos/camaAzul.png" class="img-fluid rounded-start"
+                                        style="width: 100%; max-width: 260px;">
+                                </div>
+                                <div class="col-9">
+                                    <div class="card-body textoTamanho">
+                                        <div class="d-flex justify-content-between">
+                                            <h5 class="card-title">Cama king</h5>
+                                            <i class="bi bi-x-lg fw-bold"></i>
+                                        </div>
+
+                                        <h6 class="card-title fw-bold">R$ 599,00</h6>
+                                        <div class="d-flex">
+                                            <div class="d-flex">
+                                                <div class="pe-4">
+                                                    <p class="card-text t">Nº:</p>
+                                                    <p class="card-text t">Cor:</p>
+                                                </div>
+                                                <div class="pe-4">
+                                                    <p class="card-text t">54637253</p>
+                                                    <p class="card-text t">Azul</p>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex">
+                                                <div class="pe-4">
+                                                    <p class="card-text t">Tamanho:</p>
+                                                    <p class="card-text t">Total:</p>
+                                                </div>
+                                                <div>
+                                                    <p class="card-text t">1,93*2m</p>
+                                                    <p class="card-text t">R$ 599,00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="mt-3"></div>
+                    <a href="produto.html?id=cadeiraBranca" class="d-flex justify-content-center link-anim">
+                        <div class="card w-100" style="max-width: 700px;">
+                            <div class="row g-0">
+                                <div class="col-3 d-flex align-items-center justify-content-center">
+                                    <img src="img/produtos/cadeiraBranca.png" class="img-fluid rounded-start"
+                                        style="width: 100%; max-width: 260px;">
+                                </div>
+                                <div class="col-9">
+                                    <div class="card-body  ">
+                                        <div class="d-flex justify-content-between">
+                                            <h5 class="card-title">Cadeira de couro</h5>
+                                            <i class="bi bi-x-lg fw-bold"></i>
+                                        </div>
+                                        <h6 class="card-title fw-bold">R$ 99,00</h6>
+                                        <div class="d-flex textoTamanho">
+                                            <div class="d-flex">
+                                                <div class="pe-4">
+                                                    <p class="card-text t">Nº:</p>
+                                                    <p class="card-text t">Color:</p>
+                                                </div>
+                                                <div class="pe-4">
+                                                    <p class="card-text t">54637253</p>
+                                                    <p class="card-text t">branco</p>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex">
+                                                <div class="pe-4">
+                                                    <p class="card-text t">Size:</p>
+                                                    <p class="card-text t">Total:</p>
+                                                </div>
+                                                <div>
+                                                    <p class="card-text t">43*55cm</p>
+                                                    <p class="card-text t">R$ 99,00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <p class="fw-bold text-end mt-3">Subtotal</p>
+                <hr>
+                <p class="fw-bold text-end">R$ 698,00</p>
+            </section>
+        </section>
+        <div class="d-flex justify-content-center pb-5">
+            <div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-dark  link-sem"><a href="checkount.html">Pagar compra</a></button>
+                <button type="button" class="btn btn-dark">Cancelar compra</button>
+            </div>
+        </div>
+
+        <!-- ! Carousel -->
+        <h3 class="container pt-5 pb-3 text-center">Outros produtos</h3>
+        <div id="carouselExample" class="mb-5 carousel container-carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner p-3">
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                    <div class="row justify-content-center g-5 link-sem-black">
+                        <a class="card-anim col-2 d-flex justify-content-center" href="produto.html?id=sofaBranco">
+                            <div class="card rounded-0 border-0" style="width: 306px;">
+                                <img src="img/produtos/sofaBranco.png"
+                                    class="card-img-top img-cartao rounded-0 w-100 h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title t2">Sofá de Couro</h5>
+                                    <img src="img/estrelas/5estrela.svg" alt="">
+                                    <p class="h5 fw-bold pt-2">R$ 499,00</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="card-anim col-2 d-flex justify-content-center" href="produto.html?id=camaAzul">
+                            <div class="card rounded-0 border-0" style="width: 306px;">
+                                <img src="img/produtos/camaAzul.png"
+                                    class="card-img-top img-cartao rounded-0 w-100 h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title t2">Cama king</h5>
+                                    <img src="img/estrelas/4estrela.svg" alt="">
+                                    <p class="h5 fw-bold pt-2">R$ 599,00</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="card-anim col-2 d-flex justify-content-center" href="produto.html?id=cadeiraBranca">
+                            <div class="card rounded-0 border-0" style="width: 306px;">
+                                <img src="img/produtos/cadeiraBranca.png"
+                                    class="card-img-top img-cartao rounded-0 w-100 h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title t2">Cadeira de Couro</h5>
+                                    <img src="img/estrelas/4estrela.svg" alt="">
+                                    <p class="h5 fw-bold pt-2">R$ 99,00</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="card-anim col-2 d-flex justify-content-center" href="produto.html?id=sofaCinza">
+                            <div class="card rounded-0 border-0" style="width: 306px;">
+                                <img src="img/produtos/sofaCinza.png"
+                                    class="card-img-top img-cartao rounded-0 w-100 h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title t2">Sofá tradicional</h5>
+                                    <img src="img/estrelas/4estrela.svg" alt="">
+                                    <p class="h5 fw-bold pt-2">R$ 399,00</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+                    <div class="row justify-content-center g-5 link-sem-black">
+                        <a class="card-anim col-2 d-flex justify-content-center" href="produto.html?id=camaRosa">
+                            <div class="card rounded-0 border-0" style="width: 306px;">
+                                <img src="img/produtos/camaRosa.png"
+                                    class="card-img-top img-cartao rounded-0 w-100 h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title t2">Cama king</h5>
+                                    <img src="img/estrelas/5estrela.svg" alt="">
+                                    <p class="h5 fw-bold pt-2">R$ 699,00</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="card-anim col-2 d-flex justify-content-center" href="produto.html?id=cadeiraRosa">
+                            <div class="card rounded-0 border-0" style="width: 306px;">
+                                <img src="img/produtos/cadeiraRosa.png"
+                                    class="card-img-top img-cartao rounded-0 w-100 h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title t2 ">Cadeira de tecido</h5>
+                                    <img src="img/estrelas/5estrela.svg" alt="">
+                                    <p class="h5 fw-bold pt-2">R$ 99,00</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="card-anim col-2 d-flex justify-content-center" href="produto.html?id=sofaMarrom">
+                            <div class="card rounded-0 border-0" style="width: 306px;">
+                                <img src="img/produtos/sofaMarrom.png"
+                                    class="card-img-top img-cartao rounded-0 w-100 h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title t2">Sofá tradicional</h5>
+                                    <img src="img/estrelas/3estrela.svg" alt="">
+                                    <p class="h5 fw-bold pt-2">R$ 399,00</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="card-anim col-2 d-flex justify-content-center" href="produto.html?id=almofada1">
+                            <div class="card rounded-0 border-0" style="width: 306px;">
+                                <img src="img/produtos/almofadaBranca.png"
+                                    class="card-img-top img-cartao rounded-0 w-100 h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title t2">Almofada</h5>
+                                    <img src="img/estrelas/4estrela.svg" alt="">
+                                    <p class="h5 fw-bold pt-2">R$ 49,00</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Adicione mais slides se quiser -->
+            </div>
+
+            <!-- Controles -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
+            </button>
+        </div>
+    </main>
+
+    <!-- ! Footer -->
+    <footer class="fundo-nav  d-flex align-items-end justify-content-center py-3">
+        <div>
+            <p class="text-footer fw-medium">1º IPI Mariana Santos & Emanueli</p>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/informacoes.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="description" content="Loja de móveis">
+    <meta name="keywords" content="Sofá, Cama, Cadeira">
+    <meta name="author" content="Mariana e Emanueli">
+    
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Produto | Moody Studio</title>
+
+    <link rel="stylesheet" href="css/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/responsivo-imgs.css">
+    <link rel="icon" href="img/logo.svg" type="image/x-icon">
+
+    <style>
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            filter: invert(1);
+        }
+    </style>
+</head>
+
+<body  class="page-wrapper d-flex flex-column min-vh-100">
+    <!-- ! Navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg d-flex align-items-center justify-content-between  fundo-nav">
+            <div class="container d-flex align-items-center justify-content-between">
+                <h1 class=" mb-0 fw-bold me-5 texto-cor h5">MOODY STUDIO</h1>
+
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="navbar-collapse collapse align-items-center justify-content-between"
+                    id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link fw-medium texto-cor" href="index.html">INÍCIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-medium texto-cor" href="index.html#store">LOJA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-medium texto-cor" href="contactUs.html">FALE CONOSCO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-medium texto-cor" href="temosLegais.html">TERMOS DE
+                                PRIVACIDADE</a>
+                        </li>
+                    </ul>
+
+                    <ul class="navbar-nav itens-aparece">
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <button class="btn dropdown-toggle nav-link fw-medium texto-cor" type="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    CONTA / LOGIN
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="login.html">Logar com minha conta</a></li>
+                                    <li><a class="dropdown-item" href="loginCreate.html">Criar conta</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-medium texto-cor" href="favoritos.html">FAVORITOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-medium texto-cor" href="shoppingBag.html">CARRINHO</a>
+                        </li>
+                    </ul>
+
+                    <ul class="navbar-nav icons-some">
+                        <li class="nav-item col">
+                            <div class="dropdown">
+                                <button class="btn nav-link fw-medium text-black" type="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="bi bi-person" style="font-size: 18px;"></i>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="login.html">Logar com minha conta</a></li>
+                                    <li><a class="dropdown-item" href="loginCreate.html">Criar conta</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item col">
+                            <a class="nav-link text-black" href="favoritos.html"><i class="bi bi-heart"></i></a>
+                        </li>
+                        <li class="nav-item col">
+                            <a href="shoppingBag.html" class="nav-link text-black position-relative">
+                                <i class="bi bi-bag"></i>
+                                <span
+                                    class="position-absolute top-5 start-100 translate-middle badge rounded-pill  fundo-btn">
+                                    2
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="content flex-grow-1 d-flex flex-column justify-content-center container">
+        <!-- ! Main -->
+        <section class="row p-3 d-flex justify-content-center mt-4">
+            <img class="img-fluid  img-produto mb-5 col-lg-4 col-md-6" id="imagem" src="">
+            <img class="img-fluid  img-produto mb-5 col-lg-4 col-md-6" id="imagemII" src="">
+            <div class="d-flex justify-content-center my-0 mx-auto col-lg-4 col-md-12 text-center mt-5">
+                <div class="container">
+                    <div class="pb-5">
+                        <h2 class="h2 pb-2" id="nome">Carregando produto...</h2>
+                        <p>Tamanho: <span id="tamanho"></span></p>
+                        <p>Preço: R$ <span id="preco"></span></p>
+                        <p>Cor: <span id="cor"></span></p>
+                    </div>
+                    <div>
+                        <div class="d-flex justify-content-center">
+                            <i class="bi bi-geo-alt-fill  pe-1"></i>
+                            <p id="disponivel"></p>
+                        </div>
+                        <button type="button" class="btn btn-dark rounded-0 w-100">Adicione ao carrinho</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ! Cometários -->
+        <section class="pt-5">
+            <div class="">
+                <div class="p-3 row div-comentarios">
+                    <div class="card p-3 mb-4 col-xl-5 tamanhoComentario me-4">
+                        <div class="card-body">
+                            <!-- 5 estrelas -->
+                            <img src="img/estrelas/5estrela.svg" class="pb-3">
+                            <p class="card-text">Produto excelente! O material é de ótima qualidade e o acabamento
+                                surpreendeu.
+                                A entrega foi rápida e o item chegou muito bem embalado. Recomendo demais!</p>
+                            <div class="d-flex">
+                                <img src="img/perfil/1.png" class="img-perfil rounded-circle  me-3">
+                                <p>Carlos T.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card p-3 mb-4 col-xl-5 tamanhoComentario">
+                        <div class="card-body">
+                            <!-- 5 estrelas -->
+                            <img src="img/estrelas/4estrela.svg" class="pb-3">
+                            <p class="card-text">Muito bonito. Só achei que a cor ao vivo é um pouco mais escura do que na
+                                foto, mas ainda assim combinou com minha sala. Valeu a pena!</p>
+                            <div class="d-flex">
+                                <img src="img/perfil/2.png" class="img-perfil rounded-circle  me-3">
+                                <p>Sandra F.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card p-3 mb-4 col-xl-5 tamanhoComentario me-4">
+                        <div class="card-body">
+                            <!-- 5 estrelas -->
+                            <img src="img/estrelas/5estrela.svg" class="pb-3">
+                            <p class="card-text">O produto cumpre o que promete. A montagem foi simples e, até agora, está
+                                atendendo bem no uso do dia a dia. Não tive nenhum problema com a entrega.</p>
+                            <div class="d-flex">
+                                <img src="img/perfil/4.png" class="img-perfil rounded-circle  me-3">
+                                <p>Felipe D.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card p-3 mb-4 col-xl-5 tamanhoComentario">
+                        <div class="card-body">
+                            <!-- 5 estrelas -->
+                            <img src="img/estrelas/4estrela.svg" class="pb-3">
+                            <p class="card-text">Veio conforme descrito. Tem pequenos detalhes que poderiam ser melhores,
+                                mas no geral está servindo bem para o que eu preciso.</p>
+                            <div class="d-flex">
+                                <img src="img/perfil/3.png" class="img-perfil rounded-circle  me-3">
+                                <p> Aline P.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ! Carousel -->
+        <h3 class=" pt-5 pb-3 text-center">Outros produtos</h3>
+        <div id="carouselExample" class="mb-2 carousel container-carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner p-3">
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                    <div class="row justify-content-center g-5 link-sem-black">
+                        <a class="card-anim col-2 d-flex justify-content-center" href="produto.html?id=sofaBranco">
+                            <div class="card rounded-0 border-0" style="width: 306px;">
+                                <img src="img/produtos/sofaBranco.png"
+                                    class="card-img-top img-cartao rounded-0 w-100 h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title t2">Sofá de Couro</h5>
+                                    <img src="img/estrelas/5estrela.svg" alt="">
+                                    <p class="h5 fw-bold pt-2">R$ 499,00</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="card-anim col-2 d-flex justify-content-center" href="produto.html?id=camaAzul">
+                            <div class="card rounded-0 border-0" style="width: 306px;">
+                                <img src="img/produtos/camaAzul.png"
+                                    class="card-img-top img-cartao rounded-0 w-100 h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title t2">Cama king</h5>
+                                    <img src="img/estrelas/4estrela.svg" alt="">
+                                    <p class="h5 fw-bold pt-2">R$ 599,00</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="card-anim col-2 d-flex justify-content-center" href="produto.html?id=cadeiraBranca">
+                            <div class="card rounded-0 border-0" style="width: 306px;">
+                                <img src="img/produtos/cadeiraBranca.png"
+                                    class="card-img-top img-cartao rounded-0 w-100 h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title t2">Cadeira de Couro</h5>
+                                    <img src="img/estrelas/4estrela.svg" alt="">
+                                    <p class="h5 fw-bold pt-2">R$ 99,00</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="card-anim col-2 d-flex justify-content-center" href="produto.html?id=sofaCinza">
+                            <div class="card rounded-0 border-0" style="width: 306px;">
+                                <img src="img/produtos/sofaCinza.png"
+                                    class="card-img-top img-cartao rounded-0 w-100 h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title t2">Sofá tradicional</h5>
+                                    <img src="img/estrelas/4estrela.svg" alt="">
+                                    <p class="h5 fw-bold pt-2">R$ 399,00</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+                    <div class="row justify-content-center g-5 link-sem-black">
+                        <a class="card-anim col-2 d-flex justify-content-center" href="produto.html?id=camaRosa">
+                            <div class="card rounded-0 border-0" style="width: 306px;">
+                                <img src="img/produtos/camaRosa.png"
+                                    class="card-img-top img-cartao rounded-0 w-100 h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title t2">Cama king</h5>
+                                    <img src="img/estrelas/5estrela.svg" alt="">
+                                    <p class="h5 fw-bold pt-2">R$ 699,00</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="card-anim col-2 d-flex justify-content-center" href="produto.html?id=cadeiraRosa">
+                            <div class="card rounded-0 border-0" style="width: 306px;">
+                                <img src="img/produtos/cadeiraRosa.png"
+                                    class="card-img-top img-cartao rounded-0 w-100 h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title t2 ">Cadeira de tecido</h5>
+                                    <img src="img/estrelas/5estrela.svg" alt="">
+                                    <p class="h5 fw-bold pt-2">R$ 99,00</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="card-anim col-2 d-flex justify-content-center" href="produto.html?id=sofaMarrom">
+                            <div class="card rounded-0 border-0" style="width: 306px;">
+                                <img src="img/produtos/sofaMarrom.png"
+                                    class="card-img-top img-cartao rounded-0 w-100 h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title t2">Sofá tradicional</h5>
+                                    <img src="img/estrelas/3estrela.svg" alt="">
+                                    <p class="h5 fw-bold pt-2">R$ 399,00</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="card-anim col-2 d-flex justify-content-center" href="produto.html?id=almofada1">
+                            <div class="card rounded-0 border-0" style="width: 306px;">
+                                <img src="img/produtos/almofadaBranca.png"
+                                    class="card-img-top img-cartao rounded-0 w-100 h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title t2">Almofada</h5>
+                                    <img src="img/estrelas/4estrela.svg" alt="">
+                                    <p class="h5 fw-bold pt-2">R$ 49,00</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Adicione mais slides se quiser -->
+            </div>
+
+            <!-- Controles -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
+            </button>
+        </div>
+    </main>
+
+    <!-- ! Footer -->
+    <footer class="fundo-nav  d-flex align-items-end justify-content-center py-3 mt-5">
+        <div>
+            <p class="text-footer fw-medium">1º IPI Mariana Santos & Emanueli</p>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/informacoes.js"></script>
+</body>
+
+</html>

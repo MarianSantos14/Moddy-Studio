@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta name="description" content="Loja de móveis">
+    <meta name="keywords" content="Sofá, Cama, Cadeira">
+    <meta name="author" content="Mariana e Emanueli">
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Crie uma conta | Moody Studio</title>
+
+    <link rel="stylesheet" href="css/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="icon" href="img/logo.svg" type="image/x-icon">
+
+    <style>
+        .body {
+            height: 100%;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body class="page-wrapper d-flex flex-column min-vh-100 b-login">
+    <!-- ! Navbar -->
+    <section>
+        <nav class="navbar navbar-expand-lg d-flex align-items-center justify-content-between  fundo-nav">
+            <div class="container d-flex align-items-center justify-content-between">
+                <h1 class=" mb-0 fw-bold me-5 texto-cor h5">MOODY STUDIO</h1>
+
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="navbar-collapse collapse align-items-center justify-content-between"
+                    id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link fw-medium texto-cor" href="index.html">INÍCIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-medium texto-cor" href="index.html#store">LOJA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-medium texto-cor" href="contactUs.html">FALE CONOSCO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-medium texto-cor" href="temosLegais.html">TERMOS DE
+                                PRIVACIDADE</a>
+                        </li>
+                    </ul>
+
+                    <ul class="navbar-nav itens-aparece">
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <button class="btn dropdown-toggle nav-link fw-medium texto-cor" type="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    CONTA / LOGIN
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="login.html">Logar com minha conta</a></li>
+                                    <li><a class="dropdown-item" href="loginCreate.html">Criar conta</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-medium texto-cor" href="favoritos.html">FAVORITOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-medium texto-cor" href="shoppingBag.html">CARRINHO</a>
+                        </li>
+                    </ul>
+
+                    <ul class="navbar-nav icons-some">
+                        <li class="nav-item col">
+                            <div class="dropdown">
+                                <button class="btn nav-link fw-medium text-black" type="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="bi bi-person" style="font-size: 18px;"></i>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="login.html">Logar com minha conta</a></li>
+                                    <li><a class="dropdown-item" href="loginCreate.html">Criar conta</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item col">
+                            <a class="nav-link text-black" href="favoritos.html"><i class="bi bi-heart"></i></a>
+                        </li>
+                        <li class="nav-item col">
+                            <a href="shoppingBag.html" class="nav-link text-black position-relative">
+                                <i class="bi bi-bag"></i>
+                                <span
+                                    class="position-absolute top-5 start-100 translate-middle badge rounded-pill  fundo-btn">
+                                    2
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <!-- ! Breadcrumb -->
+    <section class="container mt-3">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html" class="texto-cor">Home</a></li>
+                <li class="breadcrumb-item"><a href="login.html" class="texto-cor">Login</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Crie Conta</li>
+            </ol>
+        </nav>
+    </section>
+
+    <div class="content flex-grow-1 d-flex flex-column justify-content-center">
+        <!-- ! Login -->
+        <section class="mb-5 pb-5">
+            <h2 class="text-login fw-bold text-center mb-5 mt-5">Crie uma conta.</h2>
+            <section class="login d-flex align-items-center justify-content-center body">
+                <div class="bloco-login fundoLogin rounded-5 shadow p-5">
+                    <form>
+                        <div class="mb-3">
+                            <label for="nome" class="form-label">Primeiro nome</label>
+                            <input type="text" class="form-control border-custom" id="nome">
+                            <p class="text-danger p-1" id="alert1"></p>
+                        </div>
+                        <div class="mb-3">
+                            <label for="sobrenome" class="form-label">Segundo nome</label>
+                            <input type="text" class="form-control border-custom" id="sobrenome">
+                            <p class="text-danger p-1" id="alert2"></p>
+                        </div>
+                        <div class="mb-3">
+                            <label for="data" class="form-label">Data de nascimento</label>
+                            <input type="date" class="form-control border-custom" id="data" name="data">
+                            <p class="text-danger p-1" id="alert3"></p>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="email" class="form-label">E-mail</label>
+                            <input type="email" class="form-control border-custom" id="email"
+                                aria-describedby="emailHelp">
+                            <p class="text-danger p-1" id="alert4"></p>
+                        </div>
+                        <div class="mb-3">
+                            <label for="senha" class="form-label">Crie uma senha</label>
+                            <input type="password" class="form-control border-custom" id="senha">
+                            <p class="text-danger p-1" id="alert5"></p>
+                        </div>
+
+                        <div id="apareceAlert"></div>
+
+                        <div class="pt-3 d-flex justify-content-end">
+                            <button type="button" class="btn fundo2-btn text-white" onclick="falta()">Sign
+                                in</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </section>
+    </div>
+
+    <!-- ! Footer -->
+    <footer class="fundo-nav  d-flex align-items-end justify-content-center py-3">
+        <div>
+            <p class="text-footer fw-medium">1º IPI Mariana Santos & Emanueli</p>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/todosPreenchidos.js"></script>
+</body>
+
+</html>
